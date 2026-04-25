@@ -1,0 +1,11 @@
+{
+  "framework": "angular",
+  "buildCommand": "npm run vercel-build",
+  "outputDirectory": "dist/browser",
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+}

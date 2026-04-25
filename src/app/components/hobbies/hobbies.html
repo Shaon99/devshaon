@@ -1,0 +1,27 @@
+<section class="hobbies section" id="hobbies">
+  <span class="gutter-label">§ 07 — Life</span>
+
+  <div class="shell hobbies-shell">
+    <header class="hobbies-head" [appReveal]="0">
+      <span class="eyebrow">Beyond keyboard</span>
+      <h2 class="display-md">
+        A balanced life behind the <span class="italic-accent">builder mindset</span>.
+      </h2>
+      <p class="lede hobbies-lede">
+        Outside of engineering work, I stay active through cricket and football, keep learning by
+        experimenting with new technologies, and recharge through coffee and travel. It keeps me
+        creative, collaborative, and grounded.
+      </p>
+    </header>
+
+    <div class="hobby-grid" role="list">
+      @for (card of cards; track card.title; let i = $index) {
+        <article class="hobby-card" [appReveal]="80 + i * 70" role="listitem">
+          <span class="hobby-num">0{{ i + 1 }}</span>
+          <h3>{{ card.title }}</h3>
+          <p>{{ card.text }}</p>
+        </article>
+      }
+    </div>
+  </div>
+</section>

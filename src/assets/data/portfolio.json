@@ -1,0 +1,365 @@
+{
+  "personal": {
+    "name": "Shaon Ahmed",
+    "title": "Lead Software Engineer",
+    "tagline": "Designing Scalable Digital Solutions with Backend Excellence, System Architecture & Performance-Driven Engineering",
+    "bio": "I’m a Software Engineer specializing in designing and building large-scale, high-performance distributed systems. My focus is backend engineering with PHP and JavaScript, along with event-driven architectures using Kafka, RabbitMQ, and modern microservices patterns. I build systems that are engineered for scale, resilience, and real-world production constraints.\n\nCurrently, I work on AI-integrated backend platforms and intelligent automation systems, architecting infrastructure that supports complex workflows, high throughput, and low-latency APIs. I actively work on system optimization, scalability improvements, and production-grade reliability in high-demand environments.\n\nMy engineering approach is rooted in clean architecture, domain-driven design, and distributed system principles. I care deeply about correctness, performance, observability, and building systems that don’t break under pressure. I don’t just build features—I design systems that scale globally.\n\nI operate in environments where engineering excellence is non-negotiable: ownership, high accountability, and continuous technical evolution.\n\nI’m especially focused on:\n\n• Distributed systems & backend architecture at scale\n• Event-driven and asynchronous processing systems\n• AI-powered backend infrastructure and automation\n• Performance engineering and system optimization\n• Building production systems with real-world reliability constraints\n\n“High-performance systems are not built—they are engineered, tested under pressure, and continuously refined.”",
+    "email": "shaonahmed703@gmail.com",
+    "location": "Dhaka, Bangladesh",
+    "avatar": "https://avatars.githubusercontent.com/u/51782102?v=4",
+    "social": {
+      "github": "https://github.com/Shaon99",
+      "linkedin": "https://www.linkedin.com/in/ahmed-md-shaon/",
+      "twitter": "https://x.com/devshaon90",
+      "medium": "https://app.daily.dev/shaonahmed34"
+    },
+    "quote": "Great software is not just written, it’s engineered with purpose. Simplicity and scalability define its true strength."
+  },
+  "experience": [
+    {
+      "company": "Shohoz Software",
+      "companyUrl": "https://shohozsoftware.com",
+      "role": "Technical Team Lead",
+      "startDate": "2025-02-01",
+      "endDate": null,
+      "description": "Full-time · On-site",
+      "highlights": [
+        "Managed team delivery and mentored software engineers",
+        "Built a microservices-based manpower platform using distributed system architecture",
+        "Designed AI-integrated APIs for workflow automation",
+        "Reduced API latency by around 40% through caching and query optimization"
+      ],
+      "technologies": [
+        "Tenancy",
+        "Multi Tenant",
+        "Microservices",
+        "Distributed Systems",
+        "API Design"
+      ]
+    },
+    {
+      "company": "Shohoz Software",
+      "companyUrl": "https://shohozsoftware.com",
+      "role": "Senior Software Engineer",
+      "startDate": "2024-07-01",
+      "endDate": "2025-02-01",
+      "description": "Full-time · Remote · Dhaka, Bangladesh",
+      "highlights": [
+        "Managed SaaS billing software with a focus on automation",
+        "Maintained microservices-based ERP systems for ecommerce and local businesses",
+        "Automated logistics-related services and billing workflows",
+        "Implemented payment gateway integrations and client payment automation",
+        "Maintained applications and delivered new features from client requirements"
+      ],
+      "technologies": [
+        "Laravel",
+        "MySQL",
+        "Microservices",
+        "SaaS Billing",
+        "Payment Gateway"
+      ]
+    },
+    {
+      "company": "GotiPath",
+      "role": "Software Engineer (Backend)",
+      "startDate": "2024-10-01",
+      "endDate": "2024-12-01",
+      "description": "Full-time · On-site · Dhaka, Bangladesh",
+      "highlights": [
+        "Contributed to leading OTT platforms in Bangladesh",
+        "Developed a translation manager for multi-language content",
+        "Built robust APIs for seamless user experiences",
+        "Developed a loyalty program service",
+        "Built admin panels with Livewire and Alpine.js Flux UI for efficient operations"
+      ],
+      "technologies": [
+        "Laravel",
+        "Livewire",
+        "Alpine.js",
+        "Flux UI",
+        "REST APIs"
+      ]
+    },
+    {
+      "company": "NEXT Ventures",
+      "role": "Software Engineer (Backend)",
+      "startDate": "2023-12-01",
+      "endDate": "2024-07-01",
+      "description": "Full-time · Dhaka, Bangladesh",
+      "highlights": [
+        "Contributed to the FundedNext platform serving global users with scalable backend systems",
+        "Designed and maintained low-latency, secure, and reliable REST APIs",
+        "Implemented payout logic that reduced processing time by around 35%",
+        "Collaborated with frontend teams to ship seamless API integrations",
+        "Optimized queries and backend logic for high-load performance"
+      ],
+      "technologies": [
+        "Laravel",
+        "PHP",
+        "REST API",
+        "MySQL",
+        "Performance Optimization"
+      ]
+    },
+    {
+      "company": "Techdyno BD LTD",
+      "role": "Full Stack Developer",
+      "startDate": "2022-06-01",
+      "endDate": "2023-12-01",
+      "description": "Full-time · On-site · Dhaka, Bangladesh",
+      "highlights": [
+        "Led development of multiple applications from scratch using Laravel and the JavaScript ecosystem",
+        "Managed full project lifecycle including architecture, development, deployment, and optimization",
+        "Designed scalable databases and backend systems aligned with business goals",
+        "Improved platform performance and supported around 15-20% business growth",
+        "Mentored junior developers and enforced clean code and SOLID principles"
+      ],
+      "technologies": [
+        "PHP",
+        "Laravel",
+        "JavaScript",
+        "System Design",
+        "SOLID"
+      ]
+    },
+    {
+      "company": "SpringSoftit",
+      "role": "Junior Software Engineer",
+      "startDate": "2021-03-01",
+      "endDate": "2022-04-01",
+      "description": "Full-time · On-site · Dhaka, Bangladesh",
+      "highlights": [
+        "Developed Laravel and JavaScript applications from scratch",
+        "Contributed to Hyip Max, a top-selling CodeCanyon product",
+        "Built backend APIs, business logic, and scalable database structures",
+        "Integrated multiple payment gateways for secure transaction workflows",
+        "Optimized application performance and database queries"
+      ],
+      "technologies": [
+        "Laravel",
+        "JavaScript",
+        "MySQL",
+        "Payment Gateway",
+        "API Development"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Dhaka International University",
+      "degree": "B.S. in Computer Science & Engineering",
+      "location": "Dhaka, Bangladesh",
+      "endDate": "2020-12-31"
+    },
+    {
+      "institution": "SOS Hermann Gmeiner College, Bogura",
+      "degree": "Higher Secondary Certificate (HSC)",
+      "location": "Bogura, Bangladesh",
+      "endDate": "2014-12-31"
+    },
+    {
+      "institution": "Shabgram Kudratia High School",
+      "degree": "Secondary School Certificate (SSC)",
+      "location": "Bogura, Bangladesh",
+      "endDate": "2012-12-31"
+    }
+  ],
+  "skills": [
+    {
+      "category": "Frontend",
+      "items": [
+        {
+          "name": "Angular",
+          "level": "expert"
+        },
+        {
+          "name": "React",
+          "level": "proficient"
+        },
+        {
+          "name": "TypeScript",
+          "level": "expert"
+        },
+        {
+          "name": "TailwindCSS",
+          "level": "expert"
+        },
+        {
+          "name": "Ionic",
+          "level": "proficient"
+        },
+        {
+          "name": "RxJS",
+          "level": "expert"
+        }
+      ]
+    },
+    {
+      "category": "Backend",
+      "items": [
+        {
+          "name": "NestJS",
+          "level": "proficient"
+        },
+        {
+          "name": "NodeJS",
+          "level": "proficient"
+        },
+        {
+          "name": "C#",
+          "level": "proficient"
+        },
+        {
+          "name": "PostgresSQL",
+          "level": "proficient"
+        },
+        {
+          "name": "MongoDB",
+          "level": "proficient"
+        }
+      ]
+    },
+    {
+      "category": "DevOps & Tools",
+      "items": [
+        {
+          "name": "Azure DevOps",
+          "level": "proficient"
+        },
+        {
+          "name": "Docker",
+          "level": "proficient"
+        },
+        {
+          "name": "GitHub Actions",
+          "level": "proficient"
+        },
+        {
+          "name": "Cloudflare Page",
+          "level": "proficient"
+        },
+        {
+          "name": "Figma",
+          "level": "proficient"
+        },
+        {
+          "name": "Railway",
+          "level": "proficient"
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "devshaon",
+      "description": "Personal portfolio website built with Angular 21 and deployed on Cloudflare Workers. You're looking at it right now!",
+      "technologies": [
+        "Angular",
+        "TypeScript",
+        "Tailwind CSS",
+        "Cloudflare Workers"
+      ],
+      "url": "https://devshaon.dev",
+      "github": "https://github.com/devshaon/devshaon",
+      "featured": true
+    },
+    {
+      "name": "Optimosell",
+      "description": "Inventory and e-commerce automation platform with real-time insights, AI analytics, and ERP-style workflow integration.",
+      "technologies": [
+        "E-commerce Automation",
+        "Inventory Management",
+        "AI Analytics",
+        "ERP",
+        "Dashboard UX"
+      ],
+      "url": "https://optimosell.vercel.app/",
+      "github": "",
+      "featured": true
+    },
+    {
+      "name": "SalesMama",
+      "description": "AI-powered Facebook Messenger customer service bot supporting Bangla, Banglish, and English with automated order processing.",
+      "technologies": [
+        "AI Chatbot",
+        "Messenger Automation",
+        "Multi-language NLP",
+        "Order Processing",
+        "ERP Integration"
+      ],
+      "url": "https://salesmama.vercel.app/",
+      "github": "",
+      "featured": true
+    },
+    {
+      "name": "MouriPharma",
+      "description": "Online pharmacy and medicine ordering platform with prescription upload, pharmacist confirmation, and app-first ordering flow.",
+      "technologies": [
+        "E-commerce",
+        "Pharmacy Platform",
+        "Order Workflow",
+        "Mobile-first UX",
+        "Healthcare"
+      ],
+      "url": "https://mouripharma.com/",
+      "github": "",
+      "featured": false
+    },
+    {
+      "name": "Shishu Store",
+      "description": "Kids clothing e-commerce storefront with category browsing, order tracking, and localized retail experience.",
+      "technologies": [
+        "E-commerce",
+        "Retail",
+        "Catalog",
+        "Order Tracking",
+        "Bangladesh Market"
+      ],
+      "url": "https://shishu.store/",
+      "github": "",
+      "featured": false
+    },
+    {
+      "name": "Rashi Global",
+      "description": "Hospitality and service business website focused on room booking, property presentation, and trust-building content.",
+      "technologies": [
+        "Hospitality Website",
+        "Booking Flow",
+        "Marketing Site",
+        "Responsive UI",
+        "Brand Presence"
+      ],
+      "url": "https://rashiglobal.com/",
+      "github": "",
+      "featured": false
+    },
+    {
+      "name": "Scalable Chat App",
+      "description": "Distributed chat application using Next.js, Node.js, Socket, Redis, Kafka, PostgreSQL, Prisma, and Docker.",
+      "technologies": [
+        "Next.js",
+        "Node.js",
+        "Socket.io",
+        "Redis",
+        "Kafka"
+      ],
+      "url": "",
+      "github": "https://github.com/Shaon99/scalable-chat-app",
+      "featured": false
+    },
+    {
+      "name": "NEST_API",
+      "description": "NestJS REST API with JWT auth, Argon2 password hashing, Prisma ORM, PostgreSQL, and Dockerized development setup.",
+      "technologies": [
+        "NestJS",
+        "Prisma",
+        "PostgreSQL",
+        "JWT",
+        "Docker"
+      ],
+      "url": "",
+      "github": "https://github.com/Shaon99/NEST_API",
+      "featured": false
+    }
+  ]
+}

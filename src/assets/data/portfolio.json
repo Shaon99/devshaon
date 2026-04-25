@@ -61,6 +61,7 @@
     },
     {
       "company": "GotiPath",
+      "companyUrl": "https://gotipath.com",
       "role": "Software Engineer (Backend)",
       "startDate": "2024-10-01",
       "endDate": "2024-12-01",
@@ -82,6 +83,7 @@
     },
     {
       "company": "NEXT Ventures",
+      "companyUrl": "https://nextventures.io/",
       "role": "Software Engineer (Backend)",
       "startDate": "2023-12-01",
       "endDate": "2024-07-01",
@@ -103,6 +105,7 @@
     },
     {
       "company": "Techdyno BD LTD",
+      "companyUrl": "https://techdynobdltd.com/",
       "role": "Full Stack Developer",
       "startDate": "2022-06-01",
       "endDate": "2023-12-01",
@@ -124,6 +127,7 @@
     },
     {
       "company": "SpringSoftit",
+      "companyUrl": "https://springsoftit.com/",
       "role": "Junior Software Engineer",
       "startDate": "2021-03-01",
       "endDate": "2022-04-01",
@@ -146,13 +150,13 @@
   ],
   "education": [
     {
-      "institution": "Dhaka International University",
-      "degree": "B.S. in Computer Science & Engineering",
+      "institution": "American International University",
+      "degree": "B.S. in Software Engineering",
       "location": "Dhaka, Bangladesh",
-      "endDate": "2020-12-31"
+      "endDate": "2021-12-31"
     },
     {
-      "institution": "SOS Hermann Gmeiner College, Bogura",
+      "institution": "SOS Hermann Gmeiner College",
       "degree": "Higher Secondary Certificate (HSC)",
       "location": "Bogura, Bangladesh",
       "endDate": "2014-12-31"
@@ -166,103 +170,92 @@
   ],
   "skills": [
     {
+      "category": "PHP",
+      "items": [
+        { "name": "Laravel" },
+        { "name": "Livewire" },
+        { "name": "Pest" },
+        { "name": "PHPUnit" }
+      ]
+    },
+    {
+      "category": "JavaScript",
+      "items": [
+        { "name": "Express" },
+        { "name": "Nest" },
+        { "name": "React" },
+        { "name": "Jest" }
+      ]
+    },
+    {
       "category": "Frontend",
       "items": [
-        {
-          "name": "Angular",
-          "level": "expert"
-        },
-        {
-          "name": "React",
-          "level": "proficient"
-        },
-        {
-          "name": "TypeScript",
-          "level": "expert"
-        },
-        {
-          "name": "TailwindCSS",
-          "level": "expert"
-        },
-        {
-          "name": "Ionic",
-          "level": "proficient"
-        },
-        {
-          "name": "RxJS",
-          "level": "expert"
-        }
+        { "name": "Next" },
+        { "name": "Alpine" },
+        { "name": "Tailwind CSS" },
+        { "name": "shadcn/ui" },
+        { "name": "Flux UI" }
       ]
     },
     {
-      "category": "Backend",
+      "category": "Databases",
       "items": [
-        {
-          "name": "NestJS",
-          "level": "proficient"
-        },
-        {
-          "name": "NodeJS",
-          "level": "proficient"
-        },
-        {
-          "name": "C#",
-          "level": "proficient"
-        },
-        {
-          "name": "PostgresSQL",
-          "level": "proficient"
-        },
-        {
-          "name": "MongoDB",
-          "level": "proficient"
-        }
+        { "name": "MySQL" },
+        { "name": "PostgreSQL" },
+        { "name": "MongoDB" },
+        { "name": "Redis" }
       ]
     },
     {
-      "category": "DevOps & Tools",
+      "category": "Infrastructure",
       "items": [
-        {
-          "name": "Azure DevOps",
-          "level": "proficient"
-        },
-        {
-          "name": "Docker",
-          "level": "proficient"
-        },
-        {
-          "name": "GitHub Actions",
-          "level": "proficient"
-        },
-        {
-          "name": "Cloudflare Page",
-          "level": "proficient"
-        },
-        {
-          "name": "Figma",
-          "level": "proficient"
-        },
-        {
-          "name": "Railway",
-          "level": "proficient"
-        }
+        { "name": "Docker" },
+        { "name": "GitHub Actions (CI/CD)" },
+        { "name": "Linux" },
+        { "name": "VPS" }
+      ]
+    },
+    {
+      "category": "Monitoring",
+      "items": [
+        { "name": "Prometheus" },
+        { "name": "Grafana" }
+      ]
+    },
+    {
+      "category": "Messaging",
+      "items": [
+        { "name": "Kafka" },
+        { "name": "RabbitMQ" },
+        { "name": "WebSockets" }
+      ]
+    },
+    {
+      "category": "Architecture",
+      "items": [
+        { "name": "Monolithic" },
+        { "name": "Microservices" },
+        { "name": "Modular" },
+        { "name": "Event-Driven Systems" },
+        { "name": "Multi-Tenant" }
+      ]
+    },
+    {
+      "category": "AI",
+      "items": [
+        { "name": "AI-integrated APIs" },
+        { "name": "Workflow automation" },
+        { "name": "LLM API integration" }
+      ]
+    },
+    {
+      "category": "Go",
+      "items": [
+        { "name": "Go" }
       ]
     }
   ],
   "projects": [
-    {
-      "name": "devshaon",
-      "description": "Personal portfolio website built with Angular 21 and deployed on Cloudflare Workers. You're looking at it right now!",
-      "technologies": [
-        "Angular",
-        "TypeScript",
-        "Tailwind CSS",
-        "Cloudflare Workers"
-      ],
-      "url": "https://devshaon.dev",
-      "github": "https://github.com/devshaon/devshaon",
-      "featured": true
-    },
     {
       "name": "Optimosell",
       "description": "Inventory and e-commerce automation platform with real-time insights, AI analytics, and ERP-style workflow integration.",
@@ -303,7 +296,7 @@
       ],
       "url": "https://mouripharma.com/",
       "github": "",
-      "featured": false
+      "featured": true
     },
     {
       "name": "Shishu Store",
@@ -317,7 +310,7 @@
       ],
       "url": "https://shishu.store/",
       "github": "",
-      "featured": false
+      "featured": true
     },
     {
       "name": "Rashi Global",
@@ -331,7 +324,7 @@
       ],
       "url": "https://rashiglobal.com/",
       "github": "",
-      "featured": false
+      "featured": true
     },
     {
       "name": "Scalable Chat App",
@@ -345,7 +338,7 @@
       ],
       "url": "",
       "github": "https://github.com/Shaon99/scalable-chat-app",
-      "featured": false
+      "featured": true
     },
     {
       "name": "NEST_API",
@@ -359,7 +352,7 @@
       ],
       "url": "",
       "github": "https://github.com/Shaon99/NEST_API",
-      "featured": false
+      "featured": true
     }
   ]
 }

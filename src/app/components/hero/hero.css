@@ -234,19 +234,90 @@
 
 /* Responsive */
 @media (max-width: 900px) {
+  .hero {
+    min-height: auto;
+    padding-top: clamp(5.2rem, 12vh, 6.4rem);
+    padding-bottom: 2rem;
+  }
+  .hero-meta {
+    flex-wrap: wrap;
+    gap: 0.65rem;
+  }
+  .hero-clock {
+    margin-left: auto;
+  }
   .hero-body { grid-template-columns: 1fr; }
   .hero-rail {
     flex-direction: row;
     align-items: center;
     text-align: left;
     border-top: 1px solid var(--line);
-    padding-top: 1rem;
+    padding-top: 0.8rem;
+    gap: 0.6rem;
   }
   .rail-line { display: none; }
   .hero-foot {
     grid-template-columns: 1fr;
+    margin-top: 2.1rem;
+    gap: 1rem;
   }
   .hero-scroll { grid-column: 1; justify-self: start; flex-direction: row; }
   .hero-scroll-line { width: 3rem; height: 1px; animation: none; background: var(--accent); }
   .hero-name-line--last { margin-left: 0; }
+  .hero-actions {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding-top: 5rem;
+  }
+  .hero-meta {
+    align-items: flex-start;
+  }
+  .hero-clock {
+    font-size: 0.66rem;
+    letter-spacing: 0.12em;
+  }
+  .hero-body {
+    margin-top: 2rem;
+    gap: 1rem;
+  }
+  .hero-greeting {
+    margin-bottom: 0.9rem;
+    font-size: 0.72rem;
+  }
+  .hero-tagline {
+    font-size: 1rem;
+    line-height: 1.45;
+  }
+  .hero-actions {
+    flex-direction: column;
+  }
+  .hero-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+  .hero-scroll {
+    display: none;
+  }
+}
+
+@media (max-width: 420px) {
+  .hero {
+    padding-top: 4.6rem;
+  }
+  .hero-meta .status-pill {
+    font-size: 0.64rem;
+    letter-spacing: 0.045em;
+    padding-inline: 0.6rem;
+  }
+  .hero-clock {
+    width: 100%;
+    margin-left: 0;
+  }
+  .hero-foot {
+    padding-top: 1.1rem;
+  }
 }

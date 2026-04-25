@@ -39,6 +39,8 @@ export class Nav implements OnInit, OnDestroy {
   readonly activeSection = signal<string>('hero');
 
   #observer: IntersectionObserver | null = null;
+  #retryTimer: ReturnType<typeof setTimeout> | null = null;
+  #sectionEls: HTMLElement[] = [];
 
   ngOnInit(): void {
     if (!this.isBrowser) return;
@@ -50,14 +52,17 @@ export class Nav implements OnInit, OnDestroy {
           }
         }
       },
-      { rootMargin: '-45% 0px -50% 0px', threshold: 0 },
+      { rootMargin: '-30% 0px -60% 0px', threshold: 0.05 },
     );
-    document
-      .querySelectorAll('section[id]')
-      .forEach((section) => this.#observer!.observe(section));
+
+    this.observeSectionsWithRetry();
   }
 
   ngOnDestroy(): void {
+    if (this.#retryTimer) {
+      clearTimeout(this.#retryTimer);
+      this.#retryTimer = null;
+    }
     this.#observer?.disconnect();
   }
 
@@ -65,6 +70,7 @@ export class Nav implements OnInit, OnDestroy {
   onScroll(): void {
     if (!this.isBrowser) return;
     this.scrolled.set(window.scrollY > 24);
+    this.updateActiveFromScroll();
   }
 
   toggleMobile(): void {
@@ -77,5 +83,50 @@ export class Nav implements OnInit, OnDestroy {
     this.activeSection.set(id.replace(/^#/, ''));
     const el = this.isBrowser ? document.querySelector(id) : null;
     if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  private observeSectionsWithRetry(remainingAttempts = 8): void {
+    if (!this.#observer || !this.isBrowser) return;
+
+    this.#observer.disconnect();
+    const targets = this.links
+      .map((link) => document.getElementById(link.href.slice(1)))
+      .filter((el): el is HTMLElement => !!el);
+    this.#sectionEls = targets;
+
+    if (!targets.length && remainingAttempts > 0) {
+      this.#retryTimer = setTimeout(() => {
+        this.observeSectionsWithRetry(remainingAttempts - 1);
+      }, 120);
+      return;
+    }
+
+    for (const section of targets) {
+      this.#observer.observe(section);
+    }
+
+    // Set an initial active section after observers are attached.
+    this.updateActiveFromScroll();
+  }
+
+  private updateActiveFromScroll(): void {
+    if (!this.#sectionEls.length) return;
+
+    const viewportAnchor = window.innerHeight * 0.32;
+    let bestId = this.#sectionEls[0].id;
+    let bestDistance = Number.POSITIVE_INFINITY;
+
+    for (const section of this.#sectionEls) {
+      const rect = section.getBoundingClientRect();
+      const distance = Math.abs(rect.top - viewportAnchor);
+      if (distance < bestDistance) {
+        bestDistance = distance;
+        bestId = section.id;
+      }
+    }
+
+    if (this.activeSection() !== bestId) {
+      this.activeSection.set(bestId);
+    }
   }
 }

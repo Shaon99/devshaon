@@ -12,15 +12,7 @@ export class ThemeService {
     if (!this.isBrowser) return;
 
     const saved = localStorage.getItem('theme') as Theme | null;
-    const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    this.apply(saved ?? (systemDark ? 'dark' : 'light'));
-
-    // Track system preference changes (only when user hasn't set a manual preference)
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
-      if (!localStorage.getItem('theme')) {
-        this.apply(e.matches ? 'dark' : 'light');
-      }
-    });
+    this.apply(saved ?? 'dark');
   }
 
   toggle(): void {

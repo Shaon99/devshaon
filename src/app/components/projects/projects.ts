@@ -81,6 +81,12 @@ export class Projects implements OnInit, OnDestroy {
   onPointerDown(event: PointerEvent): void {
     const rail = this.railRef?.nativeElement;
     if (!rail || event.pointerType === 'touch') return;
+    const target = event.target as HTMLElement | null;
+    // Do not capture drags from links/buttons; clear stale drag distance so the next click navigates.
+    if (target?.closest('a, button')) {
+      this.dragMoved = 0;
+      return;
+    }
     this.isDragging = true;
     this.dragStartX = event.clientX;
     this.scrollStart = rail.scrollLeft;
@@ -105,8 +111,9 @@ export class Projects implements OnInit, OnDestroy {
     document.removeEventListener('pointerup', this.onPointerUp);
   };
 
-  /** Suppress link clicks at the end of a drag */
+  /** Suppress link clicks at the end of a drag (real mouse clicks have detail >= 1). */
   onCardClick(event: MouseEvent): void {
+    if (event.detail === 0) return;
     if (this.dragMoved > DRAG_CLICK_THRESHOLD_PX) {
       event.preventDefault();
       event.stopPropagation();

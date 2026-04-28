@@ -30,7 +30,7 @@
             <article class="row-body">
               <div class="row-top">
                 <div class="row-id">
-                  <span class="row-num">0{{ i + 1 }}</span>
+                  <span class="row-num">{{ (i + 1) < 10 ? '0' : '' }}{{ i + 1 }}</span>
                   @if (isCurrentRole(exp)) {
                     <span class="row-now">
                       <span class="now-dot"></span>Currently

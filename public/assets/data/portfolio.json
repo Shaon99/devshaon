@@ -3,7 +3,7 @@
     "name": "Shaon Ahmed",
     "title": "Lead Software Engineer",
     "tagline": "Designing Scalable Digital Solutions with Backend Excellence, System Architecture & Performance-Driven Engineering",
-    "bio": "I’m a Software Engineer specializing in designing and building large-scale, high-performance distributed systems. My focus is backend engineering with PHP and JavaScript, along with event-driven architectures using Kafka, RabbitMQ, and modern microservices patterns. I build systems that are engineered for scale, resilience, and real-world production constraints.\n\nCurrently, I work on AI-integrated backend platforms and intelligent automation systems, architecting infrastructure that supports complex workflows, high throughput, and low-latency APIs. I actively work on system optimization, scalability improvements, and production-grade reliability in high-demand environments.\n\nMy engineering approach is rooted in clean architecture, domain-driven design, and distributed system principles. I care deeply about correctness, performance, observability, and building systems that don’t break under pressure. I don’t just build features—I design systems that scale globally.\n\nI operate in environments where engineering excellence is non-negotiable: ownership, high accountability, and continuous technical evolution.\n\nI’m especially focused on:\n\n• Distributed systems & backend architecture at scale\n• Event-driven and asynchronous processing systems\n• AI-powered backend infrastructure and automation\n• Performance engineering and system optimization\n• Building production systems with real-world reliability constraints\n\n“High-performance systems are not built—they are engineered, tested under pressure, and continuously refined.”",
+    "bio": "I’m a Software Engineer specializing in designing and building large-scale, high-performance distributed systems. My focus is backend engineering with PHP and JavaScript, along with event-driven architectures using Kafka, BullMQ, and modern microservices patterns. I build systems that are engineered for scale, resilience, and real-world production constraints.\n\nCurrently, I work on AI-integrated backend platforms and intelligent automation systems, architecting infrastructure that supports complex workflows, high throughput, and low-latency APIs. I actively work on system optimization, scalability improvements, and production-grade reliability in high-demand environments.\n\nMy engineering approach is rooted in clean architecture, domain-driven design, and distributed system principles. I care deeply about correctness, performance, observability, and building systems that don’t break under pressure. I don’t just build features—I design systems that scale globally.\n\nI operate in environments where engineering excellence is non-negotiable: ownership, high accountability, and continuous technical evolution.\n\nI’m especially focused on:\n\n• Distributed systems & backend architecture at scale\n• Event-driven and asynchronous processing systems\n• AI-powered backend infrastructure and automation\n• Performance engineering and system optimization\n• Building production systems with real-world reliability constraints\n\n“High-performance systems are not built—they are engineered, tested under pressure, and continuously refined.”",
     "email": "shaonahmed703@gmail.com",
     "location": "Dhaka, Bangladesh",
     "avatar": "https://avatars.githubusercontent.com/u/51782102?v=4",
@@ -24,18 +24,22 @@
       "endDate": null,
       "description": "Full-time · On-site",
       "highlights": [
+        "Successfully led and managed a cross-functional engineering team, driving collaboration and supporting team members’ growth while ensuring project delivery as Team Lead",
         "Managed team delivery and mentored software engineers",
         "Built a microservices-based manpower platform using distributed system architecture",
+        "Built a microservices-based payment automation system that migrated manual SaaS billing processes to fully automated bKash payments from multiple SaaS projects.",
         "Designed AI-integrated APIs for workflow automation",
-        "Reduced API latency by around 40% through caching and query optimization"
-      ],
+        "Led the team in optimizing and scaling system architecture—designing solutions for performance, teaching team members architectural decision-making, and driving hands-on improvements in backend scalability.",   
+        "Product automation feature design, technical decision-making, and core automation development"   
+      ], 
       "technologies": [
-        "Tenancy",
-        "Multi Tenant",
         "Microservices",
         "Distributed Systems",
-        "API Design"
+        "API Design",
+        "System Architecture",
+        "Performance Optimization"
       ]
+ 
     },
     {
       "company": "Shohoz Software",
@@ -52,8 +56,16 @@
         "Maintained applications and delivered new features from client requirements"
       ],
       "technologies": [
+        "PHP",
+        "JavaScript",
         "Laravel",
+        "Inertia.js",
         "MySQL",
+        "Next.js",
+        "React.js",
+        "Express.js",
+        "Redis",
+        "Docker",
         "Microservices",
         "SaaS Billing",
         "Payment Gateway"
@@ -172,99 +184,205 @@
     {
       "category": "PHP",
       "items": [
-        { "name": "Laravel" },
-        { "name": "Livewire" },
-        { "name": "Pest" },
-        { "name": "PHPUnit" }
+        {
+          "name": "Laravel"
+        },
+        {
+          "name": "Livewire"
+        },
+        {
+          "name": "Laravel Scout"
+        },
+        {
+          "name": "Pest"
+        },
+        {
+          "name": "PHPUnit"
+        }
       ]
     },
     {
       "category": "JavaScript",
       "items": [
-        { "name": "Express" },
-        { "name": "Nest" },
-        { "name": "React" },
-        { "name": "Jest" }
-      ]
-    },
-    {
-      "category": "Frontend",
-      "items": [
-        { "name": "Next" },
-        { "name": "Alpine" },
-        { "name": "Tailwind CSS" },
-        { "name": "shadcn/ui" },
-        { "name": "Flux UI" }
-      ]
-    },
-    {
-      "category": "Databases",
-      "items": [
-        { "name": "MySQL" },
-        { "name": "PostgreSQL" },
-        { "name": "MongoDB" },
-        { "name": "Redis" }
-      ]
-    },
-    {
-      "category": "Infrastructure",
-      "items": [
-        { "name": "Docker" },
-        { "name": "GitHub Actions (CI/CD)" },
-        { "name": "Linux" },
-        { "name": "VPS" }
-      ]
-    },
-    {
-      "category": "Monitoring",
-      "items": [
-        { "name": "Prometheus" },
-        { "name": "Grafana" }
-      ]
-    },
-    {
-      "category": "Messaging",
-      "items": [
-        { "name": "Kafka" },
-        { "name": "RabbitMQ" },
-        { "name": "WebSockets" }
-      ]
-    },
-    {
-      "category": "Architecture",
-      "items": [
-        { "name": "Monolithic" },
-        { "name": "Microservices" },
-        { "name": "Modular" },
-        { "name": "Event-Driven Systems" },
-        { "name": "Multi-Tenant" }
-      ]
-    },
-    {
-      "category": "AI",
-      "items": [
-        { "name": "AI-integrated APIs" },
-        { "name": "Workflow automation" },
-        { "name": "LLM API integration" }
+        {
+          "name": "Express"
+        },
+        {
+          "name": "Nest"
+        },
+        {
+          "name": "React"
+        },
+        {
+          "name": "Jest"
+        }
       ]
     },
     {
       "category": "Go",
       "items": [
-        { "name": "Go" }
+        {
+          "name": "Go"
+        }
+      ]
+    },
+    {
+      "category": "Frontend",
+      "items": [
+        {
+          "name": "Next"
+        },
+        {
+          "name": "Alpine"
+        },
+        {
+          "name": "Tailwind CSS"
+        },
+        {
+          "name": "shadcn/ui"
+        },
+        {
+          "name": "Flux UI"
+        },
+        {
+          "name": "Inertia"
+        },
+        {
+          "name": "Vue"
+        }
+      ]
+    },
+    {
+      "category": "Databases",
+      "items": [
+        {
+          "name": "MySQL"
+        },
+        {
+          "name": "PostgreSQL"
+        },
+        {
+          "name": "MongoDB"
+        },
+        {
+          "name": "Redis"
+        }
+      ]
+    },
+    {
+      "category": "Infrastructure",
+      "items": [
+        {
+          "name": "Docker"
+        },
+        {
+          "name": "GitHub Actions (CI/CD)"
+        },
+        {
+          "name": "Linux"
+        },
+        {
+          "name": "VPS"
+        },
+        {
+          "name": "DigitalOcean"
+        },
+        {
+          "name": "AWS"
+        }
+      ]
+    },
+    {
+      "category": "Monitoring",
+      "items": [
+        {
+          "name": "Prometheus"
+        },
+        {
+          "name": "Grafana"
+        },
+        {
+          "name": "Loki"
+        }
+      ]
+    },
+    {
+      "category": "Messaging",
+      "items": [
+        {
+          "name": "Kafka"
+        },
+        {
+          "name": "BullMQ"
+        },
+        {
+          "name": "WebSockets"
+        }
+      ]
+    },
+    {
+      "category": "Architecture",
+      "items": [
+        {
+          "name": "Monolithic"
+        },
+        {
+          "name": "Microservices"
+        },
+        {
+          "name": "Modular"
+        },
+        {
+          "name": "Event-Driven Systems"
+        },
+        {
+          "name": "Multi-Tenant"
+        }
+      ]
+    },
+    {
+      "category": "Design Patterns",
+      "items": [
+        {
+          "name": "SOLID Principles"
+        },
+        {
+          "name": "DRY Principle"
+        },
+        {
+          "name": "Circuit Breaker"
+        },
+        {
+          "name": "Repository Pattern"
+        }
+      ]
+    },
+    {
+      "category": "AI",
+      "items": [
+        {
+          "name": "AI-integrated APIs"
+        },
+        {
+          "name": "Workflow automation"
+        },
+        {
+          "name": "LLM API integration"
+        }
       ]
     }
   ],
   "projects": [
     {
       "name": "Optimosell",
-      "description": "Inventory and e-commerce automation platform with real-time insights, AI analytics, and ERP-style workflow integration.",
+      "description": "Inventory and e-commerce automation platform. Real-time business insights and AI analytics. ERP-style workflows and dashboards.",
       "technologies": [
         "E-commerce Automation",
         "Inventory Management",
         "AI Analytics",
         "ERP",
-        "Dashboard UX"
+        "Analytics Dashboard",
+        "Accounting"
       ],
       "url": "https://optimosell.vercel.app/",
       "github": "",
@@ -272,55 +390,76 @@
     },
     {
       "name": "SalesMama",
-      "description": "AI-powered Facebook Messenger customer service bot supporting Bangla, Banglish, and English with automated order processing.",
+      "description": "AI-powered Facebook Messenger bot for customer service. Supports Bangla, Banglish, and English languages. Automates orders and lead generation.",
       "technologies": [
+        "Hobby Project",
         "AI Chatbot",
         "Messenger Automation",
         "Multi-language NLP",
-        "Order Processing",
-        "ERP Integration"
+        "Lead Generation"
       ],
       "url": "https://salesmama.vercel.app/",
       "github": "",
       "featured": true
     },
     {
-      "name": "MouriPharma",
-      "description": "Online pharmacy and medicine ordering platform with prescription upload, pharmacist confirmation, and app-first ordering flow.",
+      "name": "Mouri Pharma",
+      "description": "Online pharmacy platform for medicine ordering. Prescription upload and pharmacist confirmation. Designed for a seamless app-first experience.",
       "technologies": [
         "E-commerce",
         "Pharmacy Platform",
         "Order Workflow",
         "Mobile-first UX",
-        "Healthcare"
+        "Healthcare",
+        "Next js",
+        "Laravel",
+        "Tailwind css",
+        "MySQL",
+        "Redis",
+        "Courier Automation"
       ],
       "url": "https://mouripharma.com/",
       "github": "",
       "featured": true
     },
     {
-      "name": "Shishu Store",
-      "description": "Kids clothing e-commerce storefront with category browsing, order tracking, and localized retail experience.",
+      "name": "Shishu Poribohon",
+      "description": "Kids clothing e-commerce website. Category browsing and order tracking included. Localized for the Bangladesh retail market.",
       "technologies": [
         "E-commerce",
         "Retail",
         "Catalog",
         "Order Tracking",
-        "Bangladesh Market"
+        "Bangladesh Market",
+        "Next js",
+        "Laravel",
+        "Tailwind css",
+        "MySQL",
+        "Redis",
+        "DHL",
+        "Payment Gateway",
+        "Courier Automation"
       ],
       "url": "https://shishu.store/",
       "github": "",
       "featured": true
     },
     {
-      "name": "Rashi Global",
-      "description": "Hospitality and service business website focused on room booking, property presentation, and trust-building content.",
+      "name": "Rashi International",
+      "description": "Hospitality business website for room booking. Property presentation and marketing focus. Emphasizes trust-building and responsive design.",
       "technologies": [
         "Hospitality Website",
         "Booking Flow",
         "Marketing Site",
         "Responsive UI",
-        "Brand Presence"
+        "Brand Presence",
+        "Next js",
+        "Laravel",
+        "Tailwind css",
+        "MySQL",
+        "Redis",
+        "DHL",
+        "Payment Gateway"
       ],
       "url": "https://rashiglobal.com/",
       "github": "",
@@ -328,7 +467,7 @@
     },
     {
       "name": "Scalable Chat App",
-      "description": "Distributed chat application using Next.js, Node.js, Socket, Redis, Kafka, PostgreSQL, Prisma, and Docker.",
+      "description": "Distributed real-time chat application. Uses Next.js, Node.js, Socket.io, Kafka, and Redis. Built for scalability and collaboration.",
       "technologies": [
         "Next.js",
         "Node.js",
@@ -341,17 +480,61 @@
       "featured": true
     },
     {
-      "name": "NEST_API",
-      "description": "NestJS REST API with JWT auth, Argon2 password hashing, Prisma ORM, PostgreSQL, and Dockerized development setup.",
+      "name": "Product Management",
+      "description": "Full-stack app for managing products, customers, and orders. Backend in Laravel with CSV import and job queues. Vue.js frontend with Grav CMS integration.",
+      "technologies": [
+        "Laravel",
+        "Vue.js",
+        "Pinia",
+        "Vue Router",
+        "Axios",
+        "PHP",
+        "Job Queues",
+        "CSV Import",
+        "Grav CMS"
+      ],
+      "url": "",
+      "github": "https://github.com/Shaon99/product-management",
+      "featured": true
+    },
+    {
+      "name": "Nest JS Boilerplate",
+      "description": "NestJS REST API boilerplate for production use. JWT authentication and secure password hashing included. Uses Prisma ORM with PostgreSQL.",
       "technologies": [
         "NestJS",
         "Prisma",
         "PostgreSQL",
-        "JWT",
-        "Docker"
+        "JWT"
       ],
       "url": "",
       "github": "https://github.com/Shaon99/NEST_API",
+      "featured": true
+    },
+    {
+      "name": "GO CLI Project",
+      "description": "Practice project using Go. Command-line interface for learning purposes. Explores fun and basic CLI concepts.",
+      "technologies": [
+        "Go",
+        "CLI",
+        "Fun Project"
+      ],
+      "url": "",
+      "github": "https://github.com/Shaon99/GO",
+      "featured": true
+    },
+    {
+      "name": "Express Js Boilerplate",
+      "description": "Express.js REST API boilerplate for production. JWT authentication with Prisma/PostgreSQL & Mongoose/MongoDB. Secure, robust, and scalable setup.",
+      "technologies": [
+        "Express.js",
+        "Prisma",
+        "Mongoose",
+        "PostgreSQL",
+        "MongoDB",
+        "JWT"
+      ],
+      "url": "",
+      "github": "https://github.com/Shaon99/node-express-mongodb-api-boilerplate",
       "featured": true
     }
   ]

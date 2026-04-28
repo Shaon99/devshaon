@@ -47,12 +47,11 @@
   z-index: 1;
 }
 
-/* Heading */
+/* Heading — same stack as Education / Projects (eyebrow full width, then title) */
 .exp-head {
-  display: grid;
-  grid-template-columns: minmax(0, 8rem) minmax(0, 1fr);
-  gap: clamp(1rem, 4vw, 3rem);
-  align-items: start;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
   max-width: 60rem;
 }
 .exp-head .display-md {

@@ -1,0 +1,321 @@
+:host {
+  display: block;
+}
+
+.achievement {
+  padding-top: var(--section-pad-y);
+  padding-bottom: clamp(3rem, 7vw, 6rem);
+}
+
+/*
+ * Full 1px frame: almost flat `var(--line)` with a whisper of accent so it reads
+ * as a normal border, not an obvious gradient strip.
+ */
+.ach-band-border {
+  width: 100%;
+  max-width: 100%;
+  margin-inline: 0;
+  padding: 1px;
+  border-radius: 0;
+  box-sizing: border-box;
+  background: conic-gradient(from 0.15turn at 50% 50%,
+      var(--line) 0deg,
+      color-mix(in srgb, var(--line) 97%, var(--accent)) 72deg,
+      color-mix(in srgb, var(--line) 94%, var(--accent-soft)) 144deg,
+      color-mix(in srgb, var(--line) 96%, var(--accent)) 216deg,
+      color-mix(in srgb, var(--line) 98%, var(--accent-strong)) 288deg,
+      var(--line) 360deg);
+  box-shadow: var(--shadow-soft);
+}
+
+.ach-band {
+  width: 100%;
+  max-width: 100%;
+  margin-inline: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 2.5rem;
+  max-height: none;
+  border-radius: 0;
+  overflow: hidden;
+  border: none;
+  background: var(--bg-card);
+}
+
+/* Left column: same base as `.panel-media` */
+.ach-visual {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  min-height: 20rem;
+  padding: clamp(1.5rem, 4vw, 3rem);
+  text-decoration: none;
+  color: inherit;
+  /* background: var(--bg-surface); */
+  isolation: isolate;
+  transition: background-color 0.3s var(--ease-out);
+}
+
+/* .ach-visual:hover {
+  background: color-mix(in srgb, var(--bg-surface) 94%, var(--accent-soft));
+} */
+
+.ach-visual-glow {
+  position: absolute;
+  inset: -40%;
+  background: radial-gradient(circle at 50% 40%, color-mix(in srgb, var(--accent) 10%, transparent), transparent 42%);
+  opacity: 0.55;
+  pointer-events: none;
+  z-index: 0;
+  transition: opacity 0.55s cubic-bezier(0.22, 1, 0.36, 1), transform 0.75s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.ach-visual:hover .ach-visual-glow {
+  opacity: 0.72;
+  transform: scale(1.03);
+}
+
+.ach-visual:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
+.ach-visual-img {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  margin-inline: auto;
+  max-height: min(38vh, 20rem);
+  object-fit: contain;
+  object-position: center;
+  transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.4s var(--ease-out);
+}
+
+.ach-visual:hover .ach-visual-img {
+  transform: scale(1.03) translateY(-1px);
+}
+
+.ach-visual-caption {
+  position: relative;
+  z-index: 1;
+  margin-top: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  text-align: center;
+}
+
+.ach-visual-caption-title {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(1.15rem, 2.2vw, 1.45rem);
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+}
+
+.ach-visual-caption-sub {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+/* Right column: sits on card surface like `.panel` body (no separate glass layer) */
+.ach-panel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0%;
+  min-width: 0;
+  justify-content: center;
+  padding: clamp(2rem, 4.5vw, 3.5rem) clamp(1.5rem, 4vw, 3rem) clamp(2rem, 4.5vw, 3.5rem) clamp(1.25rem, 3.5vw, 2.75rem);
+  background: var(--bg-card);
+  transition: background-color 0.3s var(--ease-out);
+}
+
+.ach-panel-inner {
+  position: relative;
+  max-width: 45rem;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1.1rem, 2.2vw, 1.65rem);
+}
+
+.ach-head {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.ach-title {
+  margin: 0;
+  font-weight: 350;
+  letter-spacing: -0.03em;
+  line-height: 1.08;
+  color: var(--text-primary);
+}
+
+.ach-lede {
+  margin: 0.35rem 0 0;
+  font-size: clamp(0.98rem, 1.12vw, 1.06rem);
+  line-height: 1.62;
+  color: var(--text-secondary);
+  max-width: 54ch;
+}
+
+.ach-lede strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.ach-prose {
+  font-size: clamp(0.98rem, 1.08vw, 1.04rem);
+  line-height: 1.72;
+  color: var(--text-secondary);
+}
+
+.ach-prose p {
+  margin: 0 0 1.1rem;
+}
+
+.ach-prose p:last-child {
+  margin-bottom: 0;
+}
+
+.ach-prose strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.ach-inline-link {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  text-decoration-color: color-mix(in srgb, var(--accent) 45%, transparent);
+  transition: color 0.3s cubic-bezier(0.22, 1, 0.36, 1), text-decoration-color 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.ach-inline-link:hover {
+  color: var(--accent-strong);
+  text-decoration-color: color-mix(in srgb, var(--accent-strong) 55%, transparent);
+}
+
+.ach-stats {
+  margin: 0.25rem 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 0.65rem;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.ach-stats-dot {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--accent) 65%, var(--text-muted));
+  opacity: 0.75;
+  flex-shrink: 0;
+}
+
+.ach-cta-wrap {
+  margin: 0.35rem 0 0;
+}
+
+.ach-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.78rem 1.35rem;
+  border-radius: 999px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent-ink);
+  background: var(--accent);
+  border: 1px solid color-mix(in srgb, var(--accent-strong) 50%, transparent);
+  text-decoration: none;
+  transition:
+    transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+    background-color 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+    color 0.35s var(--ease-out);
+}
+
+.ach-btn svg {
+  width: 15px;
+  height: 15px;
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.ach-btn:hover {
+  transform: translateY(-2px);
+  background-color: color-mix(in srgb, var(--accent-strong) 18%, var(--accent));
+  border-color: var(--accent-strong);
+}
+
+.ach-btn:hover svg {
+  transform: translate(2px, -2px);
+}
+
+@media (max-width: 960px) {
+  .ach-band {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .ach-visual {
+    min-height: clamp(13rem, 38vw, 18rem);
+    padding-block: clamp(1.75rem, 5vw, 2.5rem);
+  }
+
+  .ach-visual-img {
+    max-height: min(32vw, 11rem);
+  }
+
+  .ach-panel {
+    padding: clamp(1.75rem, 4vw, 2.5rem) clamp(1.25rem, 4vw, 1.75rem);
+  }
+
+  .ach-stats {
+    row-gap: 0.35rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  .ach-band,
+  .ach-visual,
+  .ach-visual-glow,
+  .ach-visual-img,
+  .ach-panel,
+  .ach-btn,
+  .ach-btn svg,
+  .ach-inline-link {
+    transition: none;
+  }
+
+  .ach-visual:hover .ach-visual-img,
+  .ach-btn:hover {
+    transform: none;
+  }
+}

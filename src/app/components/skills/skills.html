@@ -19,7 +19,7 @@
     @for (cat of data.skills; track cat.category; let i = $index) {
     <div class="strip" [class.strip--reverse]="i % 2 === 1" [appReveal]="i * 50" role="listitem">
       <span class="strip-label">
-        <span class="strip-num">0{{ i + 1 }}</span>
+        <span class="strip-num">{{ (i + 1) < 10 ? '0' : '' }}{{ i + 1 }}</span>
         <span class="strip-category">{{ cat.category }}</span>
       </span>
       <div class="strip-track-outer">
